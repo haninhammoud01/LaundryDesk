@@ -66,7 +66,7 @@ Setiap transaksi dapat dilihat secara detail melalui navigasi:
 - Next  
 - Last  
 
-Pendekatan ini membantu saya memahami **state management dan navigation flow** pada aplikasi desktop.
+Pendekatan ini membantu dalam memahami **state management dan navigation flow** pada aplikasi desktop.
 
 ---
 
