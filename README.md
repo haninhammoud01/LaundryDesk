@@ -1,104 +1,119 @@
-# 🧺 LaundryDesk  
 
-*A Thoughtful Desktop App for Learning Real-World Data Flow*
+# LaundryDesk
 
-**Tech Stack:** Python · PyQt6 · SQLite  
+*A Desktop Application for Managing Laundry Operations*
 
-> *“Good software starts with understanding how data moves — not how fancy the UI looks.”*
+**Tech Stack:** Python · PyQt6 · SQLite
 
-LaundryDesk adalah aplikasi desktop manajemen laundry yang dibangun sebagai project UAS, dengan pendekatan **product-oriented engineering**: sederhana, terstruktur, dan fokus pada alur data yang nyata.
+> "Good software starts with understanding how data moves, not how fancy the UI looks."
 
-Project ini menjadi latihan dalam merancang software yang **mudah dipahami, mudah dijelaskan, dan siap didemokan** — kualitas yang krusial dalam lingkungan profesional dan tim produk.
+LaundryDesk is a desktop application for laundry management, developed as a final examination project for Desktop Programming.
 
----
+The project follows a **product-oriented engineering approach**, focusing on clear structure, practical data flow, and essential application functionality.
 
-## 🧠 What I Intentionally Focused On
+It explores how to build software that is easy to understand, maintain, and demonstrate, while applying fundamental principles of desktop application development.
 
-Dalam LaundryDesk, secara sadar memprioritaskan:
+## Design Priorities
 
-- Clear data ownership (customer, package, transaction)
-- Relational thinking melalui **Primary Key & Foreign Key**
-- Separation of concerns antara **UI, logic, dan database**
-- Predictable user flow yang mudah dijelaskan saat demo
+The development of LaundryDesk focuses on four key areas:
 
-Tanpa framework berat.  
-Tanpa overengineering.  
-Hanya fondasi yang kuat.
+- **Clear data ownership:** Separating customer, package, and transaction data.
+- **Relational database design:** Applying Primary Key and Foreign Key constraints.
+- **Separation of concerns:** Keeping the user interface, application logic, and database operations organized.
+- **Predictable user flow:** Designing interactions that are straightforward and easy to demonstrate.
 
----
+The goal was not to introduce unnecessary complexity, but to establish a solid foundation for a functional desktop application.
 
-## 🗃️ Data Model as the Core
+## Database Design
 
-Aplikasi ini dibangun di atas **SQLite relational database** dengan tiga entitas utama:
+LaundryDesk uses **SQLite** as its relational database, with three primary entities:
 
 - `customers`
 - `packages`
 - `transactions`
 
-Relasi antar tabel memastikan bahwa:
+Relationships between these tables ensure that:
 
-- Setiap transaksi selalu terhubung ke customer yang valid
-- Setiap transaksi mereferensikan paket laundry yang tersedia
+- Every transaction is associated with a valid customer.
+- Every transaction references an available laundry package.
 
-Pendekatan ini melatih berpikir sebagai engineer yang bertanggung jawab terhadap **data integrity**, bukan hanya tampilan UI.
+This structure reinforces the importance of **data integrity** and relational database design in application development.
 
----
+## Application Features
 
-## 📊 How the App Works
+### Table View
 
-### Table View — Seeing the Big Picture
+Users can browse transaction records in a structured table.
 
-Pengguna dapat melihat daftar transaksi dalam bentuk tabel dengan:
+Available filtering options include:
 
-- Filter berdasarkan **nama customer**
-- Filter berdasarkan **status transaksi**
+- Customer name
+- Transaction status
 
-Fitur ini merepresentasikan kebutuhan dunia nyata: *find data fast*.
+This feature supports efficient record retrieval and provides a clear overview of ongoing transactions.
 
----
+### Record View
 
-### Record View — One Data at a Time
+Individual transactions can be inspected through record navigation.
 
-Setiap transaksi dapat dilihat secara detail melalui navigasi:
+Available navigation controls:
 
-- First  
-- Previous  
-- Next  
-- Last  
+- First
+- Previous
+- Next
+- Last
 
-Pendekatan ini membantu dalam memahami **state management dan navigation flow** pada aplikasi desktop.
+This implementation provides practical experience with state management and navigation flow in desktop applications.
 
----
+### Add and Edit Records
 
-### Add & Edit — Real Interaction
+Users can:
 
-Pengguna dapat:
+- Create new transactions.
+- Edit existing transaction records.
 
-- Menambahkan transaksi baru
-- Mengedit transaksi yang sudah ada
+All changes are stored directly in the SQLite database without mock data or intermediate files.
 
-Semua perubahan langsung tersimpan ke database tanpa mock data atau file perantara.
+## UAS Requirements
 
----
+LaundryDesk was developed to fulfill the requirements of the Desktop Programming final examination.
 
-## 📋 Ketentuan UAS & Pemenuhan
+| Requirement | Status |
+|---|---|
+| Create and populate at least two tables using SQL, with a minimum of five records | Completed |
+| Run the application through a single Python file during the demonstration | Completed |
+| Implement relational database relationships using Primary Keys and Foreign Keys | Completed |
+| Provide a Table View with two filtering inputs | Completed |
+| Provide individual record views with navigation controls | Completed |
+| Implement record creation and editing functionality | Completed |
 
-Project LaundryDesk dikembangkan dengan mengacu pada seluruh ketentuan UAS Pemrograman Desktop.  
-Berikut adalah daftar ketentuan beserta status pemenuhannya:
+## Getting Started
 
-| Ketentuan UAS | Status |
-|--------------|--------|
-| 2 tabel dibuat & diisi (min. 5 record) menggunakan SQL | ✅ |
-| Hanya 1 file Python dijalankan saat demo | ✅ |
-| Semua tabel memiliki relasi RDB (Primary Key – Foreign Key) | ✅ |
-| Table View dengan 2 input filter | ✅ |
-| Tampilan per-record dengan tombol navigasi | ✅ |
-| Fungsi edit & tambah record | ✅ |
+### Prerequisites
 
----
+- Python 3.x
+- pip
 
-## 🚀 How to Run
+### Installation
+
+Install the required dependency:
 
 ```bash
 pip install PyQt6
+```
+
+### Run the Application
+
+```bash
 python laundry_uas.py
+```
+
+## Project Context
+
+**Course:** Desktop Programming  
+**Project Type:** Final Examination Project  
+**Application:** Desktop Laundry Management System
+
+LaundryDesk demonstrates the implementation of a relational database, structured application logic, and interactive desktop interfaces using Python.
+
+The project serves as a practical exercise in building software with clear responsibilities and maintainable data flow.
