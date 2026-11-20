@@ -14,13 +14,13 @@ LaundryDesk is a desktop-based laundry management system developed as a final pr
 
 ## Features
 
-- **Transaction Management** — Create, view, update, and delete laundry transactions.
-- **Customer Management** — Maintain customer information and records.
-- **Laundry Packages** — Manage available services, pricing, and estimated completion times.
-- **Transaction Filtering** — Find records by customer name and transaction status.
-- **Automatic Price Calculation** — Calculate transaction costs based on laundry weight, package price, and discount.
-- **Completion Estimation** — Determine expected completion dates using package duration.
-- **Relational Data Management** — Maintain relationships between customers, packages, and transactions.
+- **Transaction Management** Create, view, update, and delete laundry transactions.
+- **Customer Management** Maintain customer information and records.
+- **Laundry Packages** Manage available services, pricing, and estimated completion times.
+- **Transaction Filtering** Find records by customer name and transaction status.
+- **Automatic Price Calculation** Calculate transaction costs based on laundry weight, package price, and discount.
+- **Completion Estimation** Determine expected completion dates using package duration.
+- **Relational Data Management** Maintain relationships between customers, packages, and transactions.
 
 ## Database Design
 
