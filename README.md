@@ -2,6 +2,8 @@
 
 **A desktop application for managing laundry operations.**
 
+[**Live Demo ↗**](https://laundrydesk.streamlit.app/)
+
 `Python` · `PyQt6` · `SQLite`
 
 LaundryDesk is a desktop-based laundry management system developed as a final project for the Desktop Programming course. It provides a practical way to manage customer records, laundry packages, and transaction data through a graphical interface backed by a relational database.
@@ -82,15 +84,6 @@ LaundryDesk/
 ├── laundry_uas_final.db
 └── README.md
 ```
-
-## Project Context
-
-| | |
-|---|---|
-| Course | Desktop Programming |
-| Project Type | Final Examination Project |
-| Application | Desktop Laundry Management System |
-| Developer | [haninhammoud01](https://github.com/haninhammoud01) |
 
 ## Learning Outcomes
 
